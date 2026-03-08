@@ -18,6 +18,8 @@ request:
   headers:
     - name: X-INTERNAL-AUTH
       value: "{{internal_secret}}"
+    - name: X-Requested-By
+      value: Druling
 bundled: false
 extensions:
   bruno:
