@@ -1,0 +1,27 @@
+info:
+  name: download file
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/workflow_run_step/download_file/"
+  headers:
+    - name: X-Requested-By
+      value: Druling
+  body:
+    type: json
+    data: |-
+      {
+          "step_id": "3500a5b9-c9ea-436b-8e5c-0408ede52a08",
+          "file_path": "e40f77af-f88a-4ce7-bd4d-7652da1427c5-username.csv"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

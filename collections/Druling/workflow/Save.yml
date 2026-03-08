@@ -1,0 +1,68 @@
+info:
+  name: Save
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/workflow/save/"
+  headers:
+    - name: X-Requested-By
+      value: Druling
+  body:
+    type: json
+    data: |-
+      {
+          "workflow": {
+              "name": "New Workflow"
+          },
+          "steps": [
+              {
+                  "batch": false,
+                  "is_collapsed": false,
+                  "position": {
+                      "x": 378,
+                      "y": 54.92559044044934
+                  },
+                  "description": "Use Optical Character Recognition to detect text in a PDF file and return the extracted text. Helpful when there are images or no actual text elements in the PDF file.",
+                  "category": "PDF",
+                  "operation": "PDF OCR Reader",
+                  "version": "v0_04",
+                  "inputs": {},
+                  "parameters": {
+                      "File URL": null,
+                      "File Name": null,
+                      "Use Link?": null,
+                      "image_model_preference": null,
+                      "Temperature": null,
+                      "Split PDF Content by Page": null,
+                      "Cache Response": null,
+                      "Page Numbers": null,
+                      "Specify Pages?": null,
+                      "Thinking Tokens": null
+                  },
+                  "parameter_errors": {
+                      "File URL": "",
+                      "File Name": "",
+                      "Use Link?": "",
+                      "image_model_preference": "",
+                      "Temperature": "",
+                      "Split PDF Content by Page": "",
+                      "Cache Response": "",
+                      "Page Numbers": "",
+                      "Specify Pages?": "",
+                      "Thinking Tokens": ""
+                  },
+                  "name": "PDF OCR Reader"
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

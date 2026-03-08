@@ -1,0 +1,33 @@
+info:
+  name: Upload to S3
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:4566/dev-druling-files/54419f82-4759-406e-a253-6cf7b3f53ae8-test.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=test%2F20250814%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250814T073259Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=1b30eb2799c59abb35e63cff0637c3a9c8ff760f1ef446194791db8a1f85e6af
+  params:
+    - name: X-Amz-Algorithm
+      value: AWS4-HMAC-SHA256
+      type: query
+    - name: X-Amz-Credential
+      value: test%2F20250814%2Fap-south-1%2Fs3%2Faws4_request
+      type: query
+    - name: X-Amz-Date
+      value: 20250814T073259Z
+      type: query
+    - name: X-Amz-Expires
+      value: "600"
+      type: query
+    - name: X-Amz-SignedHeaders
+      value: host
+      type: query
+    - name: X-Amz-Signature
+      value: 1b30eb2799c59abb35e63cff0637c3a9c8ff760f1ef446194791db8a1f85e6af
+      type: query
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

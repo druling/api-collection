@@ -1,0 +1,26 @@
+info:
+  name: Upload Success
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/file/save/"
+  body:
+    type: json
+    data: |-
+      {
+          "name": "test.pdf",
+          "size": 10,
+          "type": "pdf",
+          "path": "54419f82-4759-406e-a253-6cf7b3f53ae8-test.pdf"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

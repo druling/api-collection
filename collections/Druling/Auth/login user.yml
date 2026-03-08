@@ -1,0 +1,21 @@
+info:
+  name: login user
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/user/login/"
+  body:
+    type: form-urlencoded
+    data:
+      - name: password
+        value: Test@1233
+      - name: email
+        value: test2@gmail.com
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,17 @@
+info:
+  name: all
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{mcp_url}}/tool/all"
+  headers:
+    - name: X-INTERNAL-AUTH
+      value: "{{internal_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

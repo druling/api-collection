@@ -1,0 +1,32 @@
+info:
+  name: Analyze asset
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{ai_url}}/asset_conversation/analyze_asset"
+  headers:
+    - name: X-Requested-By
+      value: Druling
+      disabled: true
+    - name: X-INTERNAL-AUTH
+      value: "{{internal_token}}"
+  body:
+    type: json
+    data: |-
+      {
+          "query": "Give the summary of the content",
+          "model": "gemini-2.5-flash",
+          "provider": "Google",
+          "url": "http://localhost:4566/dev-druling-files/54419f82-4759-406e-a253-6cf7b3f53ae8-test.pdf",
+          "file_type": "pdf",
+          "size": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

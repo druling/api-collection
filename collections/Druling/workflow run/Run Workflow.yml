@@ -1,0 +1,84 @@
+info:
+  name: Run Workflow
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/workflow_run/start/"
+  headers:
+    - name: X-Requested-By
+      value: Druling
+  body:
+    type: json
+    data: |-
+      {
+          "run_details": {
+              "workflow_id": "5f64e697-cb95-462a-85a2-700802e67101",
+              "name": "New Workflow",
+              "description": "Add a description for your workflow",
+              "trigger_type": "MANUAL"
+          },
+          "steps": [
+              {
+                  "workflow_step_id": "69be8744-fb02-431a-a371-9c6ff0c46744",
+                  "batch": false,
+                  "is_collapsed": false,
+                  "category": "AI Flow",
+                  "operation": "Ask AI",
+                  "name": "test",
+                  "parameters": {
+                      "model_preference": "gemini-2.5-flash",
+                      "azure_deployment_map": null,
+                      "azure_resource_groups_map": null,
+                      "context": null,
+                      "Azure Cognitive Services Account": null,
+                      "azure_cognitive_services_map": null,
+                      "Azure Subscription": null,
+                      "Azure Deployment": null,
+                      "prompt": "Hi my name is ayush singhal",
+                      "azure_subscription_map": null,
+                      "Azure Resource Group": null,
+                      "Use Function?": null,
+                      "Cache Response": null,
+                      "Thinking Tokens": null,
+                      "Temperature": null,
+                      "Maximum Tokens": null
+                  },
+                  "parameter_errors": {
+                      "model_preference": "",
+                      "azure_deployment_map": "",
+                      "azure_resource_groups_map": "",
+                      "context": "",
+                      "Azure Cognitive Services Account": "",
+                      "azure_cognitive_services_map": "",
+                      "Azure Subscription": "",
+                      "Azure Deployment": "",
+                      "prompt": "",
+                      "azure_subscription_map": "",
+                      "Azure Resource Group": "",
+                      "Use Function?": "",
+                      "Cache Response": "",
+                      "Thinking Tokens": "",
+                      "prompt_template": "",
+                      "Temperature": "",
+                      "Maximum Tokens": ""
+                  },
+                  "inputs": {},
+                  "version": "v0_07",
+                  "position": {
+                      "x": 597,
+                      "y": -238
+                  }
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

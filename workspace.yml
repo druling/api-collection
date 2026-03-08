@@ -1,0 +1,16 @@
+opencollection: 1.0.0
+info:
+  name: "Druling API Collection"
+  type: workspace
+
+collections:
+  - name: "Druling"
+    path: "collections/Druling"
+  - name: "Druling Mcp"
+    path: "collections/Druling Mcp"
+  - name: "Druling ai server"
+    path: "collections/Druling ai server"
+
+specs:
+
+docs: ''

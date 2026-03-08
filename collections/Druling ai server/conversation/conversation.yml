@@ -1,0 +1,29 @@
+info:
+  name: conversation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{ai_url}}/conversation"
+  headers:
+    - name: X-Requested-By
+      value: Druling
+      disabled: true
+    - name: X-INTERNAL-AUTH
+      value: "{{internal_token}}"
+  body:
+    type: json
+    data: |-
+      {
+          "query": "Hi my name is ayush",
+          "model": "gemini-2.5-flash",
+          "provider": "Google"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,14 @@
+name: Production
+variables:
+  - name: token
+    value: ""
+  - name: collectionName
+    value: ""
+  - name: collectionSchemaUrl
+    value: ""
+  - name: accessKey
+    value: ""
+  - name: workspaceId
+    value: ""
+  - name: collectionId
+    value: ""

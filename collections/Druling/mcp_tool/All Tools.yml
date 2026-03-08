@@ -1,0 +1,48 @@
+info:
+  name: All Tools
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/mcp_tool/all/"
+  headers:
+    - name: Accept
+      value: "*/*"
+    - name: Accept-Language
+      value: en-US,en;q=0.9
+    - name: Cache-Control
+      value: no-cache
+    - name: Connection
+      value: keep-alive
+    - name: Origin
+      value: http://localhost:5173
+    - name: Pragma
+      value: no-cache
+    - name: Referer
+      value: http://localhost:5173/
+    - name: Sec-Fetch-Dest
+      value: empty
+    - name: Sec-Fetch-Mode
+      value: cors
+    - name: Sec-Fetch-Site
+      value: same-site
+    - name: User-Agent
+      value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+    - name: sec-ch-ua
+      value: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+    - name: sec-ch-ua-mobile
+      value: ?0
+    - name: sec-ch-ua-platform
+      value: '"macOS"'
+    - name: Cookie
+      value: g_state={"i_l":0,"i_ll":1760428337936,"i_b":"F6mGfWITp80OCQQtZg6dufAfMcIRdDlAQbk0I+QtVdI"}; csrftoken=lmkgMbwDLFC2kdYC3rjOrOSVh6ynyzPf; sidebar_state=true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

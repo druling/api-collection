@@ -1,0 +1,22 @@
+info:
+  name: Verify
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/user/email_verify/"
+  body:
+    type: json
+    data: |-
+      {
+          "email": "test2@gmail.com",
+          "code": "123123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

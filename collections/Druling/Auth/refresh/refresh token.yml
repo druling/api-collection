@@ -1,0 +1,20 @@
+info:
+  name: refresh token
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/token/"
+  body:
+    type: json
+    data: |-
+      {
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1Mzk3NjI4MSwiaWF0IjoxNzUzODg5ODgxLCJqdGkiOiI1NzExZGQ2MWJmNWQ0ZjQ3OTI1ZDA4MTIzMTM1ZmNlNiIsInVzZXJfaWQiOiIxNjg5ZWYyZi0xODU5LTQyMWEtYmIyMC0yMTI5NmI2NWM4YzQifQ.QcrjQuPWOrtTc8Sl9JAeywtwj3bILIj6ycdKa4exXxo"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

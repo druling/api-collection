@@ -1,0 +1,48 @@
+info:
+  name: Fetch token via Key
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/token/refresh/"
+  headers:
+    - name: Accept
+      value: "*/*"
+    - name: Accept-Language
+      value: en-GB,en;q=0.8
+    - name: Connection
+      value: keep-alive
+    - name: Origin
+      value: http://localhost:5173
+    - name: Referer
+      value: http://localhost:5173/
+    - name: Sec-Fetch-Dest
+      value: empty
+    - name: Sec-Fetch-Mode
+      value: cors
+    - name: Sec-Fetch-Site
+      value: same-site
+    - name: Sec-GPC
+      value: "1"
+    - name: User-Agent
+      value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+    - name: content-type
+      value: application/json
+    - name: sec-ch-ua
+      value: '"Chromium";v="134", "Not:A-Brand";v="24", "Brave";v="134"'
+    - name: sec-ch-ua-mobile
+      value: ?0
+    - name: sec-ch-ua-platform
+      value: '"macOS"'
+    - name: x-requested-by
+      value: Druling
+  body:
+    type: json
+    data: '{"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1Mzk3NjI4MSwiaWF0IjoxNzUzODg5ODgxLCJqdGkiOiI1NzExZGQ2MWJmNWQ0ZjQ3OTI1ZDA4MTIzMTM1ZmNlNiIsInVzZXJfaWQiOiIxNjg5ZWYyZi0xODU5LTQyMWEtYmIyMC0yMTI5NmI2NWM4YzQifQ.QcrjQuPWOrtTc8Sl9JAeywtwj3bILIj6ycdKa4exXxo"}'
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
