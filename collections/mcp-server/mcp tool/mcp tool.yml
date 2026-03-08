@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{mcp_url}}/workflow/mcp"
+  url: "{{url}}/workflow/mcp"
   headers:
     - name: X-PROFILE-ID
       value: test
@@ -17,9 +17,6 @@ http:
       value: test
     - name: Accept
       value: text/event-stream
-    - name: X-INTERNAL-AUTH
-      value: "{{internal_token}}"
-  auth: inherit
 
 settings:
   encodeUrl: true

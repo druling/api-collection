@@ -5,10 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{mcp_url}}/tool/all"
-  headers:
-    - name: X-INTERNAL-AUTH
-      value: "{{internal_token}}"
+  url: "{{url}}/tool/all"
 
 settings:
   encodeUrl: true

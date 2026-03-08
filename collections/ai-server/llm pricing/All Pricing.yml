@@ -5,11 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{ai_url}}/pricing/all"
-  headers:
-    - name: X-INTERNAL-AUTH
-      value: "{{internal_token}}"
-  auth: inherit
+  url: "{{url}}/pricing/all"
 
 settings:
   encodeUrl: true

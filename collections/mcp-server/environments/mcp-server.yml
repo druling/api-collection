@@ -1,0 +1,4 @@
+name: mcp-server
+variables:
+  - name: url
+    value: "{{process.env.MCP_URL}}"

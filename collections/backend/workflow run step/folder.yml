@@ -1,7 +1,7 @@
 info:
-  name: Auth
+  name: workflow run step
   type: folder
-  seq: 12
+  seq: 7
 
 request:
   auth: inherit

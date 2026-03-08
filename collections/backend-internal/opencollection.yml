@@ -1,7 +1,7 @@
 opencollection: 1.0.0
 
 info:
-  name: ai-server
+  name: backend-internal
 config:
   proxy:
     inherit: true

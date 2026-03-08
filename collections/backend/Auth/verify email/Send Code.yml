@@ -12,7 +12,6 @@ http:
       {
           "email": "test2@gmail.com"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

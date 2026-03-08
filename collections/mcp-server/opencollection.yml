@@ -17,10 +17,14 @@ config:
 request:
   headers:
     - name: X-INTERNAL-AUTH
-      value: ""
+      value: "{{internal_secret}}"
 bundled: false
 extensions:
   bruno:
     ignore:
       - node_modules
       - .git
+    presets:
+      request:
+        type: http
+        url: "{{url}}"

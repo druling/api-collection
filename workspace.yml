@@ -10,7 +10,11 @@ collections:
     path: "collections/mcp-server"
   - name: "AI Server"
     path: "collections/ai-server"
+  - name: "backend-internal"
+    path: "collections/backend-internal"
 
 specs:
 
 docs: ''
+
+activeEnvironmentUid: ga3lmy000000000000000

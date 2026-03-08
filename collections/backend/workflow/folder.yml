@@ -1,7 +1,7 @@
 info:
-  name: Auth
+  name: workflow
   type: folder
-  seq: 12
+  seq: 4
 
 request:
   auth: inherit

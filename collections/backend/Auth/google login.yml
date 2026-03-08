@@ -6,13 +6,9 @@ info:
 http:
   method: POST
   url: "{{url}}/user/google_login/"
-  headers:
-    - name: X-Requested-By
-      value: Druling
   body:
     type: json
     data: ""
-  auth: inherit
 
 settings:
   encodeUrl: true

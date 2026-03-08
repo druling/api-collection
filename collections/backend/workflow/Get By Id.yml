@@ -1,11 +1,11 @@
 info:
-  name: Health Check
+  name: Get By Id
   type: http
-  seq: 9
+  seq: 2
 
 http:
   method: GET
-  url: "{{url}}/health/"
+  url: "{{url}}/workflow/5f64e697-cb95-462a-85a2-700802e67101/"
 
 settings:
   encodeUrl: true

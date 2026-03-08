@@ -1,0 +1,4 @@
+name: ai-server
+variables:
+  - name: url
+    value: "{{process.env.AI_SEVER_URL}}"

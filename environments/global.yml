@@ -1,0 +1,4 @@
+name: global
+variables:
+  - name: internal_secret
+    value: "{{process.env.INERNAL_SECRET}}"

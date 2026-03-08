@@ -1,11 +1,11 @@
 info:
-  name: Health Check
+  name: Tool Detail
   type: http
-  seq: 9
+  seq: 2
 
 http:
   method: GET
-  url: "{{url}}/health/"
+  url: "{{url}}/mcp_tool/hubspot/"
 
 settings:
   encodeUrl: true

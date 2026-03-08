@@ -5,10 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{ai_url}}/health"
-  headers:
-    - name: X-Requested-By
-      value: Druling
+  url: "{{url}}/health"
   body:
     type: text
     data: ""

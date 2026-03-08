@@ -1,17 +1,18 @@
 info:
-  name: Verify
+  name: Get Upload URL
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: "{{url}}/user/email_verify/"
+  url: "{{url}}/file/signed_url/"
   body:
     type: json
     data: |-
       {
-          "email": "test2@gmail.com",
-          "code": "123123"
+          "name": "test.pdf",
+          "size": 10,
+          "type": "pdf"
       }
 
 settings:

@@ -1,0 +1,6 @@
+name: backend
+variables:
+  - name: url
+    value: "{{process.env.BACKEND_URL}}"
+  - secret: true
+    name: token

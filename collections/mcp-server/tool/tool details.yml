@@ -5,10 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{mcp_url}}/tool/gmail"
-  headers:
-    - name: X-INTERNAL-AUTH
-      value: "{{internal_token}}"
+  url: "{{url}}/tool/gmail"
 
 settings:
   encodeUrl: true

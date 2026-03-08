@@ -1,0 +1,57 @@
+info:
+  name: interaction
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/assistant/general_agent/"
+  body:
+    type: json
+    data: |-
+      {
+          "agent_id": "b0f6eef4-9bcd-4b4a-8fe9-0d5250d2bc03",
+          "chat_id": "19be54c7-5b97-4350-afe0-1ac230bb900e",
+          "messages": [
+              {
+                  "id": "3ea8527d-2e79-4f59-aaa8-95f4df77440a",
+                  "role": "user",
+                  "content": "Test 2 message"
+              }
+          ]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Generated from cURL: curl --location 'http://localhost:8000/assistant/interaction/' \
+  --header 'Accept: */*' \
+  --header 'Accept-Language: en-US,en;q=0.9' \
+  --header 'Cache-Control: no-cache' \
+  --header 'Connection: keep-alive' \
+  --header 'Content-Length: 0' \
+  --header 'Origin: http://localhost:5173' \
+  --header 'Pragma: no-cache' \
+  --header 'Referer: http://localhost:5173/' \
+  --header 'Sec-Fetch-Dest: empty' \
+  --header 'Sec-Fetch-Mode: cors' \
+  --header 'Sec-Fetch-Site: same-site' \
+  --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  --header 'authorization;' \
+  --header 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  --header 'sec-ch-ua-mobile: ?0' \
+  --header 'sec-ch-ua-platform: "macOS"' \
+  --header 'Cookie: g_state={"i_l":0,"i_ll":1760428337936,"i_b":"F6mGfWITp80OCQQtZg6dufAfMcIRdDlAQbk0I+QtVdI"}; sidebar_state=true; csrftoken=Mgy69RxMAGiTLHqIpQcjm3iSJ3aPVWYn' \
+  --header 'Content-Type: application/json' \
+  --data '{
+      "message": [
+          {
+              "role": "user",
+              "content": "Hello"
+          }
+      ]
+  }'

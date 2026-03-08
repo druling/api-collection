@@ -5,13 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{ai_url}}/conversation"
-  headers:
-    - name: X-Requested-By
-      value: Druling
-      disabled: true
-    - name: X-INTERNAL-AUTH
-      value: "{{internal_token}}"
+  url: "{{url}}/conversation"
   body:
     type: json
     data: |-
@@ -20,7 +14,6 @@ http:
           "model": "gemini-2.5-flash",
           "provider": "Google"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

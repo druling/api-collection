@@ -1,0 +1,4 @@
+name: backend-internal
+variables:
+  - name: url
+    value: "{{process.env.BACKEND_URL}}/internal"

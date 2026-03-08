@@ -5,13 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{ai_url}}/asset_conversation/analyze_asset"
-  headers:
-    - name: X-Requested-By
-      value: Druling
-      disabled: true
-    - name: X-INTERNAL-AUTH
-      value: "{{internal_token}}"
+  url: "{{url}}/asset_conversation/analyze_asset"
   body:
     type: json
     data: |-
@@ -23,7 +17,6 @@ http:
           "file_type": "pdf",
           "size": 1
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

@@ -13,9 +13,18 @@ config:
         username: ""
         password: ""
       bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: "{{token}}"
 bundled: false
 extensions:
   bruno:
     ignore:
       - node_modules
       - .git
+    presets:
+      request:
+        type: http
+        url: "{{url}}"
