@@ -4,12 +4,12 @@ info:
   type: workspace
 
 collections:
-  - name: "Druling"
-    path: "collections/Druling"
-  - name: "Druling Mcp"
-    path: "collections/Druling Mcp"
-  - name: "Druling ai server"
-    path: "collections/Druling ai server"
+  - name: "Backend"
+    path: "collections/backend"
+  - name: "MCP Server"
+    path: "collections/mcp-server"
+  - name: "AI Server"
+    path: "collections/ai-server"
 
 specs:
 
