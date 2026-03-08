@@ -1,7 +1,7 @@
 info:
-  name: mcp_tool
+  name: fileUpload
   type: folder
-  seq: 11
+  seq: 1
 
 request:
   auth: inherit

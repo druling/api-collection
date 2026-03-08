@@ -1,7 +1,10 @@
 info:
   name: internal
   type: folder
-  seq: 7
+  seq: 1
 
 request:
+  headers:
+    - name: X-INTERNAL-AUTH
+      value: ""
   auth: inherit
