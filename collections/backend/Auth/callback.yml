@@ -1,11 +1,11 @@
 info:
-  name: google login
+  name: callback
   type: http
-  seq: 5
+  seq: 4
 
 http:
   method: POST
-  url: "{{url}}/user/google_login/"
+  url: "{{url}}/auth/callback/"
   body:
     type: json
     data: ""

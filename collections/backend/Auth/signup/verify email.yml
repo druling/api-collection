@@ -1,0 +1,21 @@
+info:
+  name: verify email
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/auth/verify_email/"
+  body:
+    type: json
+    data: |-
+      {
+        "code": "123123",
+        "token": "pending_token"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
