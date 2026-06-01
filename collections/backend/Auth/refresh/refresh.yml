@@ -1,17 +1,16 @@
 info:
-  name: Verify
+  name: refresh
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: "{{url}}/user/email_verify/"
+  url: "{{url}}/auth/refresh/"
   body:
     type: json
     data: |-
       {
-          "email": "test2@gmail.com",
-          "code": "123123"
+          "refresh": "zaxii7qN3v4tA8vtxbZQHjHJ8"
       }
 
 settings:

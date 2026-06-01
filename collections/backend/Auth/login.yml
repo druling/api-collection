@@ -1,11 +1,11 @@
 info:
-  name: login user
+  name: login
   type: http
-  seq: 4
+  seq: 3
 
 http:
   method: POST
-  url: "{{url}}/user/login/"
+  url: "{{url}}/auth/login/"
   body:
     type: form-urlencoded
     data:
